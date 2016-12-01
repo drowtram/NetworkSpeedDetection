@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_alee"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nsd"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/about_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/title_btn"
+            android:drawableRight="@drawable/setting_item_icon_focus_about"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/tips"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/toolbar_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_airplane"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/turn_on"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <me.xiaopan.switchbutton.SwitchButton
+                    android:id="@+id/turn_on_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:frameDrawable="@drawable/switch_ex_frame"
+                    app:sliderDrawable="@drawable/selector_switch_slider"
+                    app:stateDrawable="@drawable/selector_switch_state"
+                    app:stateMaskDrawable="@drawable/switch_ex_mask"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_topleft">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_lock"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lock_without_show"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <me.xiaopan.switchbutton.SwitchButton
+                    android:id="@+id/lock_turn_on_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:frameDrawable="@drawable/switch_ex_frame"
+                    app:sliderDrawable="@drawable/selector_switch_slider"
+                    app:stateDrawable="@drawable/selector_switch_state"
+                    app:stateMaskDrawable="@drawable/switch_ex_mask"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E9E9E9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_n">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_personal_ap"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/show_up_down"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <me.xiaopan.switchbutton.SwitchButton
+                    android:id="@+id/up_down_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:frameDrawable="@drawable/switch_ex_frame"
+                    app:sliderDrawable="@drawable/selector_switch_slider"
+                    app:stateDrawable="@drawable/selector_switch_state"
+                    app:stateMaskDrawable="@drawable/switch_ex_mask"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E9E9E9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_n">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_brightness"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/show_shadow"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <me.xiaopan.switchbutton.SwitchButton
+                    android:id="@+id/show_shadow_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:frameDrawable="@drawable/switch_ex_frame"
+                    app:sliderDrawable="@drawable/selector_switch_slider"
+                    app:stateDrawable="@drawable/selector_switch_state"
+                    app:stateMaskDrawable="@drawable/switch_ex_mask"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E9E9E9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_n">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_safe"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <Button
+                    android:id="@+id/text_color_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_selector"
+                    android:drawableRight="@drawable/setting_item_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/set_text_color"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E9E9E9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_n">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_gps"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/position_change"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <SeekBar
+                    android:id="@+id/position_sb"
+                    style="@style/Widget.SeekBar.Normal"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:max="1080"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="235"
+                    android:splitTrack="false"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E9E9E9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icons_bg_bottomleft">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/setting_item_icon_wallpaper"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="61dp"
+                android:background="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/set_text_size"
+                    android:textColor="#454A5B"
+                    android:textSize="17sp"/>
+
+                <SeekBar
+                    android:id="@+id/size_sb"
+                    style="@style/Widget.SeekBar.Normal"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:max="17"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="14"
+                    android:splitTrack="false"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

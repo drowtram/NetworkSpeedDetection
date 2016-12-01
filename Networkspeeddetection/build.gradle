@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.alee.nsd"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 203
+        versionName "2.0.3"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'me.xiaopan:switchbutton:1.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    testCompile 'junit:junit:4.12'
+}

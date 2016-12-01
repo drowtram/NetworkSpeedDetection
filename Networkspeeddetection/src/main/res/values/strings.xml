@@ -1,0 +1,11 @@
+<resources>
+    <string name="nsd">网速监测</string>
+    <string name="turn_on">开启网速监测</string>
+    <string name="lock_without_show">锁屏状态下不显示</string>
+    <string name="position_change">位置调整</string>
+    <string name="set_text_color">字体颜色</string>
+    <string name="set_text_size">字体大小</string>
+    <string name="tips">关于</string>
+    <string name="show_up_down">显示上传下载</string>
+    <string name="show_shadow">显示阴影</string>
+</resources>
